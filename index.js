@@ -19,7 +19,7 @@ module.exports = function (options) {
     context.NODE_ENV = context.NODE_ENV || 'development';
 
     contents = file.contents.toString('utf8');
-    contents = pp.preprocess(contents, context, getExtension(context.src));
+    contents = pp.preprocess(contents, context, opts.syntax || getExtension(context.src));
     file.contents = new Buffer(contents);
 
     callback(null, file);

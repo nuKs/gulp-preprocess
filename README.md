@@ -103,6 +103,12 @@ Type: `String`
 
 Base directory for included files. By default, the path to included files is relative to the file currently being processed.
 
+#### options.syntax
+Type: `String`
+
+If defined, force a specified format for the directives. Eg: html, js, ...
+It might be used to force a html syntax in php files.
+
 ## LICENSE
 
 The MIT License (MIT)
